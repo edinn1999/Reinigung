@@ -4,6 +4,7 @@
 const KONTAKT = {
   telefon: "+43 677 6230 3614",        // so wird die Nummer angezeigt
   telefonLink: "+4367762303614",     // internationale Form für den Anruf-Link
+  whatsapp: "+436765850848",        // Nummer, auf der WhatsApp läuft
   email: "cleanpro@outlook.at",
 };
 
@@ -16,7 +17,7 @@ document.querySelectorAll("[data-mail-link]").forEach((a) => {
 });
 // WhatsApp: öffnet den Chat mit einer vorbereiteten ersten Nachricht
 const waHref =
-  "https://wa.me/" + KONTAKT.telefonLink.replace(/\D/g, "") +
+  "https://wa.me/" + KONTAKT.whatsapp.replace(/\D/g, "") +
   "?text=" + encodeURIComponent("Hallo CleanPro, ich hätte gerne ein Angebot für: ");
 document.querySelectorAll("[data-wa-link]").forEach((a) => (a.href = waHref));
 document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
