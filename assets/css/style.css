@@ -307,7 +307,10 @@ h1 {
   object-fit: cover;
   border-radius: var(--r-photo);
 }
-.service--flip img { order: 2; }
+.service--flip { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
+.service--flip > img,
+.service--flip > .ba { order: 2; }
+.service .ba-stage { aspect-ratio: 5 / 4; }
 .service h3,
 .service-text h3 {
   font-size: clamp(1.7rem, 3vw, 2.5rem);
@@ -344,13 +347,7 @@ h1 {
 }
 .text-link:hover { color: var(--marine); }
 
-/* Leistungen ohne Foto – zwei Spalten auf hellem Grund */
-.service-pair {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--gap);
-  margin: clamp(24px, 3vw, 40px) 0;
-}
+/* Leistung ohne Foto – Textband auf hellem Grund */
 .service-text {
   min-width: 0;
   hyphens: auto;
@@ -358,6 +355,17 @@ h1 {
   background: var(--nebel);
   border-radius: var(--r-photo);
 }
+.service-text--wide {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  column-gap: clamp(24px, 5vw, 80px);
+  align-items: start;
+  margin: clamp(16px, 2vw, 24px) 0;
+}
+.service-text--wide h3,
+.service-text--wide > p { grid-column: 1; }
+.service-text--wide ul { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; }
+.service-text--wide .text-link { grid-column: 1; justify-self: start; }
 
 /* Vorher / Nachher */
 .compare {
@@ -571,8 +579,10 @@ h1 {
 
   .service,
   .contact { grid-template-columns: 1fr; }
-  .service--flip img { order: 0; }
-  .service-pair { grid-template-columns: 1fr; }
+  .service--flip > img,
+  .service--flip > .ba { order: 0; }
+  .service-text--wide { display: block; }
+  .service-text--wide ul { margin-top: 20px; }
   .service-text h3 { font-size: 1.6rem; overflow-wrap: break-word; }
 
   .compare-grid { grid-template-columns: 1fr; }
