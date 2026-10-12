@@ -306,21 +306,26 @@ h1 {
   border-radius: var(--r-photo);
 }
 .service--flip img { order: 2; }
-.service h3 {
+.service h3,
+.service-text h3 {
   font-size: clamp(1.7rem, 3vw, 2.5rem);
   line-height: 1.05;
   font-weight: 800;
   font-variation-settings: "wdth" 118;
   letter-spacing: -.02em;
 }
-.service-body > p { margin-top: 12px; max-width: 46ch; font-size: 1.125rem; }
-.service ul { margin-top: 20px; display: grid; gap: 10px; }
-.service li {
+.service-body > p,
+.service-text > p { margin-top: 12px; max-width: 46ch; font-size: 1.125rem; }
+.service ul,
+.service-text ul { margin-top: 20px; display: grid; gap: 10px; }
+.service li,
+.service-text li {
   position: relative;
   padding-left: 30px;
   max-width: 52ch;
 }
-.service li::before {
+.service li::before,
+.service-text li::before {
   content: "";
   position: absolute; left: 0; top: .35em;
   width: 18px; height: 18px;
@@ -336,6 +341,21 @@ h1 {
   text-underline-offset: 5px;
 }
 .text-link:hover { color: var(--marine); }
+
+/* Leistungen ohne Foto – zwei Spalten auf hellem Grund */
+.service-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gap);
+  margin: clamp(24px, 3vw, 40px) 0;
+}
+.service-text {
+  min-width: 0;
+  hyphens: auto;
+  padding: clamp(24px, 3vw, 44px);
+  background: var(--nebel);
+  border-radius: var(--r-photo);
+}
 
 /* Vorher / Nachher */
 .compare {
@@ -532,6 +552,8 @@ h1 {
   .service,
   .contact { grid-template-columns: 1fr; }
   .service--flip img { order: 0; }
+  .service-pair { grid-template-columns: 1fr; }
+  .service-text h3 { font-size: 1.6rem; overflow-wrap: break-word; }
 
   .compare-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }

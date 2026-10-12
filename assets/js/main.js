@@ -2,8 +2,8 @@
 
 // Kontaktdaten hier eintragen – sie werden überall auf der Seite übernommen.
 const KONTAKT = {
-  telefon: "0676 585 08 48",        // so wird die Nummer angezeigt
-  telefonLink: "+436765850848",     // internationale Form für den Anruf-Link
+  telefon: "+43 677 6230 3614",        // so wird die Nummer angezeigt
+  telefonLink: "+4367762303614",     // internationale Form für den Anruf-Link
   email: "cleanpro@outlook.at",
 };
 
