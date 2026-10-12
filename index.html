@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CleanPro Reinigungsservice – Reinigung, Garten & Winterdienst</title>
+  <meta name="description" content="CleanPro Reinigungsservice: Gebäude- und Fensterreinigung, Terrassen- und Gartenpflege, Winterdienst. Sauberkeit, die überzeugt.">
+  <link rel="icon" href="assets/img/logo-cleanpro-kurz.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+  <div class="frame">
+    <header class="hero">
+      <nav class="topbar" aria-label="Hauptnavigation">
+        <a class="brand" href="#" aria-label="CleanPro – zur Startseite">
+          <img src="assets/img/logo-cleanpro-kurz.webp" alt="CleanPro" width="700" height="337">
+        </a>
+        <ul class="pillnav">
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#vorher-nachher">Vorher & Nachher</a></li>
+          <li><a href="#ablauf">Ablauf</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <div class="topbar-actions">
+          <a class="btn-icon" href="tel:+490000000000" data-phone-link aria-label="Anrufen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          </a>
+          <a class="btn btn-yellow" href="#kontakt">Angebot anfragen</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid" id="inhalt">
+        <div class="hero-copy">
+          <div class="segment" role="group" aria-label="Für wen">
+            <button type="button" class="is-active" data-audience="privat" aria-pressed="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+              Für Zuhause
+            </button>
+            <button type="button" data-audience="gewerbe" aria-pressed="false">Für Gewerbe</button>
+          </div>
+          <h1>Sauberkeit, die überzeugt.</h1>
+          <p class="lede" data-lede-privat>Fenster, Terrasse, Garten, Winterdienst – wir kümmern uns rund ums Haus, damit Sie Ihre Zeit für Schöneres haben.</p>
+          <p class="lede" data-lede-gewerbe hidden>Büro, Praxis, Laden oder Wohnanlage – wir halten Ihre Flächen sauber, die Glasfronten klar und im Winter die Wege frei.</p>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="assets/img/fenster-durchblick.webp" alt="Glasfront vor und nach der Fensterreinigung durch CleanPro: links verschmiert, rechts klar" width="1696" height="927" fetchpriority="high">
+        </figure>
+
+        <p class="wordmark" aria-hidden="true"><span class="wm-clean">Clean</span><span class="wm-pro">Pro</span></p>
+      </div>
+
+      <form class="booking" id="booking" aria-labelledby="booking-title">
+        <h2 id="booking-title">Was dürfen wir für Sie erledigen?</h2>
+        <div class="booking-bar">
+          <label class="field">
+            <span>Leistung</span>
+            <select name="leistung" id="b-leistung">
+              <option>Fensterreinigung</option>
+              <option>Unterhaltsreinigung</option>
+              <option>Grundreinigung</option>
+              <option>Terrassen- & Steinreinigung</option>
+              <option>Gartenpflege</option>
+              <option>Winterdienst</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Objekt</span>
+            <select name="objekt" id="b-objekt">
+              <option>Wohnung</option>
+              <option>Einfamilienhaus</option>
+              <option>Büro / Praxis</option>
+              <option>Wohnanlage</option>
+              <option>Gewerbefläche</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Postleitzahl</span>
+            <input name="plz" id="b-plz" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="z. B. 50667" autocomplete="postal-code">
+          </label>
+          <button class="btn btn-yellow booking-submit" type="submit">
+            Angebot anfragen
+            <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span>
+          </button>
+        </div>
+      </form>
+
+      <a class="notch" href="#leistungen">
+        Mehr über uns
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </header>
+
+    <main>
+      <section class="services" id="leistungen" aria-labelledby="leistungen-title">
+        <div class="section-head">
+          <h2 id="leistungen-title">Von der Reinigung über den Garten bis zum Schnee</h2>
+          <p>Ein Ansprechpartner für alles rund um Ihr Haus oder Ihr Objekt – das ganze Jahr über.</p>
+        </div>
+
+        <article class="service">
+          <img src="assets/img/fenster-nachher.webp" alt="Klare, gereinigte Glasfront eines Bürogebäudes" width="488" height="776" loading="lazy">
+          <div class="service-body">
+            <h3>Reinigung</h3>
+            <p>Saubere Räume und klarer Durchblick – in der Wohnung, im Haus und im Büro.</p>
+            <ul>
+              <li>Fenster- und Glasreinigung inklusive Rahmen</li>
+              <li>Unterhaltsreinigung für Büros und Praxen</li>
+              <li>Grundreinigung bei Ein- und Auszug</li>
+              <li>Treppenhausreinigung für Wohnanlagen</li>
+            </ul>
+            <a class="text-link" href="#kontakt" data-pick="Fensterreinigung">Reinigung anfragen</a>
+          </div>
+        </article>
+
+        <article class="service service--flip">
+          <img src="assets/img/terrasse-nachher.webp" alt="Frisch gereinigte, helle Terrassenplatten neben gepflegtem Rasen" width="764" height="880" loading="lazy">
+          <div class="service-body">
+            <h3>Garten & Außenflächen</h3>
+            <p>Moos, Grünbelag und Schmutz runter – damit Terrasse und Garten wieder einladen.</p>
+            <ul>
+              <li>Terrassen-, Pflaster- und Steinreinigung</li>
+              <li>Rasen mähen, Hecken und Sträucher schneiden</li>
+              <li>Laub entfernen und Beete pflegen</li>
+              <li>Saisonpflege im Frühjahr und Herbst</li>
+            </ul>
+            <a class="text-link" href="#kontakt" data-pick="Terrassen- & Steinreinigung">Gartenpflege anfragen</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="assets/img/schnee-nachher.webp" alt="Garten nach dem Winterdienst: Rasen und Terrasse vom Schnee befreit" width="830" height="820" loading="lazy">
+          <div class="service-body">
+            <h3>Winterdienst</h3>
+            <p>Wege frei, bevor Sie aus dem Haus gehen – zuverlässig auch früh am Morgen.</p>
+            <ul>
+              <li>Schneeräumung von Gehwegen, Einfahrten und Terrassen</li>
+              <li>Streudienst bei Glätte</li>
+              <li>Feste Einsatzbereitschaft über die Wintersaison</li>
+            </ul>
+            <a class="text-link" href="#kontakt" data-pick="Winterdienst">Winterdienst anfragen</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="compare" id="vorher-nachher" aria-labelledby="vergleich-title">
+        <div class="section-head section-head--light">
+          <h2 id="vergleich-title">Sehen Sie selbst</h2>
+          <p>Ziehen Sie den Regler, um vorher und nachher zu vergleichen.</p>
+        </div>
+        <div class="compare-grid">
+          <figure class="ba" style="--pos:50%">
+            <div class="ba-stage">
+              <img class="ba-after" src="assets/img/terrasse-nachher.webp" alt="Terrasse nach der Reinigung" width="764" height="880" loading="lazy">
+              <img class="ba-before" src="assets/img/terrasse-vorher.webp" alt="Terrasse vor der Reinigung, mit Moos und Schmutz" width="764" height="880" loading="lazy">
+              <span class="ba-tag ba-tag--before">Vorher</span>
+              <span class="ba-tag ba-tag--after">Nachher</span>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Vergleich Terrasse: vorher und nachher">
+            </div>
+            <figcaption>Terrassenreinigung</figcaption>
+          </figure>
+          <figure class="ba" style="--pos:50%">
+            <div class="ba-stage">
+              <img class="ba-after" src="assets/img/schnee-nachher.webp" alt="Garten nach dem Winterdienst" width="830" height="820" loading="lazy">
+              <img class="ba-before" src="assets/img/schnee-vorher.webp" alt="Garten vor dem Winterdienst, komplett verschneit" width="830" height="820" loading="lazy">
+              <span class="ba-tag ba-tag--before">Vorher</span>
+              <span class="ba-tag ba-tag--after">Nachher</span>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Vergleich Winterdienst: vorher und nachher">
+            </div>
+            <figcaption>Winterdienst</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="process" id="ablauf" aria-labelledby="ablauf-title">
+        <div class="section-head">
+          <h2 id="ablauf-title">So einfach geht's</h2>
+          <p>Vom ersten Anruf bis zur sauberen Fläche.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Anfrage senden</h3>
+            <p>Formular ausfüllen oder anrufen. Sagen Sie uns, was zu tun ist und wo.</p>
+          </li>
+          <li>
+            <h3>Angebot erhalten</h3>
+            <p>Wir schauen uns das Objekt bei Bedarf an und nennen Ihnen einen festen Preis.</p>
+          </li>
+          <li>
+            <h3>Termin festlegen</h3>
+            <p>Einmalig oder regelmäßig – wir richten uns nach Ihrem Kalender.</p>
+          </li>
+          <li>
+            <h3>Sauber übergeben</h3>
+            <p>Wir bringen Geräte und Mittel mit und gehen das Ergebnis gemeinsam mit Ihnen durch.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact" id="kontakt" aria-labelledby="kontakt-title">
+        <div class="contact-info">
+          <h2 id="kontakt-title">Angebot anfragen</h2>
+          <p>Schreiben Sie uns kurz, worum es geht. Wir melden uns mit einem Angebot bei Ihnen.</p>
+          <dl class="contact-list">
+            <div>
+              <dt>Telefon</dt>
+              <dd><a href="tel:+490000000000" data-phone-link data-phone-text>+49 000 0000000</a></dd>
+            </div>
+            <div>
+              <dt>E-Mail</dt>
+              <dd><a href="mailto:kontakt@example.de" data-mail-link>kontakt@example.de</a></dd>
+            </div>
+            <div>
+              <dt>Einsatzgebiet</dt>
+              <dd>Ihre Stadt und Umgebung</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="row">
+            <label class="input">
+              <span>Name</span>
+              <input name="name" required autocomplete="name">
+            </label>
+            <label class="input">
+              <span>Telefon</span>
+              <input name="telefon" type="tel" autocomplete="tel">
+            </label>
+          </div>
+          <label class="input">
+            <span>E-Mail</span>
+            <input name="email" type="email" required autocomplete="email">
+          </label>
+          <div class="row">
+            <label class="input">
+              <span>Leistung</span>
+              <select name="leistung" id="c-leistung">
+                <option>Fensterreinigung</option>
+                <option>Unterhaltsreinigung</option>
+                <option>Grundreinigung</option>
+                <option>Terrassen- & Steinreinigung</option>
+                <option>Gartenpflege</option>
+                <option>Winterdienst</option>
+              </select>
+            </label>
+            <label class="input">
+              <span>Postleitzahl</span>
+              <input name="plz" id="c-plz" inputmode="numeric" maxlength="5" autocomplete="postal-code">
+            </label>
+          </div>
+          <label class="input">
+            <span>Ihre Nachricht</span>
+            <textarea name="nachricht" id="c-nachricht" rows="4" placeholder="z. B. Fenster im Erdgeschoss, ca. 12 Stück, alle zwei Monate"></textarea>
+          </label>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <button class="btn btn-yellow" type="submit">Anfrage senden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img class="footer-logo" src="assets/img/logo-cleanpro.webp" alt="CleanPro Reinigungsservice – Sauberkeit, die überzeugt." width="1000" height="604" loading="lazy">
+      <nav aria-label="Rechtliches">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </nav>
+      <p>© <span data-year>2026</span> CleanPro Reinigungsservice</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
