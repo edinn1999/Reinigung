@@ -2,11 +2,12 @@
 
 // Kontaktdaten hier eintragen – sie werden überall auf der Seite übernommen.
 const KONTAKT = {
-  telefon: "+49 000 0000000",
-  email: "kontakt@example.de",
+  telefon: "0676 585 08 48",        // so wird die Nummer angezeigt
+  telefonLink: "+436765850848",     // internationale Form für den Anruf-Link
+  email: "cleanpro@outlook.at",
 };
 
-const telHref = "tel:" + KONTAKT.telefon.replace(/[^\d+]/g, "");
+const telHref = "tel:" + KONTAKT.telefonLink;
 document.querySelectorAll("[data-phone-link]").forEach((a) => (a.href = telHref));
 document.querySelectorAll("[data-phone-text]").forEach((a) => (a.textContent = KONTAKT.telefon));
 document.querySelectorAll("[data-mail-link]").forEach((a) => {
