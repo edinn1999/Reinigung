@@ -8,6 +8,8 @@
   --weiss: #ffffff;
   --nebel: #eef3f9;      /* helle Flächen */
   --grau: #5b6b86;       /* Sekundärtext */
+  --whatsapp: #25d366;   /* Markenfarbe von WhatsApp */
+  --whatsapp-dunkel: #075e54;
 
   --r-card: 28px;
   --r-photo: 20px;
@@ -520,6 +522,24 @@ h1 {
 .footer nav { display: flex; gap: 24px; justify-self: center; }
 .footer a { color: var(--weiss); text-underline-offset: 4px; }
 
+/* WhatsApp-Knopf, immer erreichbar */
+.wa-float {
+  position: fixed; z-index: 40;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 20px 10px 12px;
+  background: var(--whatsapp); color: var(--whatsapp-dunkel);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(7, 94, 84, .35);
+  font-weight: 700; text-decoration: none;
+}
+.wa-float:hover { background: #1fbe5a; }
+.wa-float svg { width: 32px; height: 32px; }
+.wa-float .wa-bubble { fill: var(--weiss); }
+.wa-float .wa-phone { fill: var(--whatsapp); }
+.wa-float:focus-visible { outline-color: var(--marine); border-radius: 999px; }
+
 /* ---------- Responsiv ---------- */
 
 @media (max-width: 1080px) {
@@ -559,6 +579,8 @@ h1 {
   .steps { grid-template-columns: 1fr; }
   .contact-form .row { grid-template-columns: 1fr; }
 
-  .footer { grid-template-columns: 1fr; justify-items: start; }
+  .footer { grid-template-columns: 1fr; justify-items: start; padding-bottom: 88px; }
+  .wa-float { padding: 12px; }
+  .wa-float span { display: none; }
   .footer nav { justify-self: start; }
 }

@@ -14,6 +14,11 @@ document.querySelectorAll("[data-mail-link]").forEach((a) => {
   a.href = "mailto:" + KONTAKT.email;
   a.textContent = KONTAKT.email;
 });
+// WhatsApp: öffnet den Chat mit einer vorbereiteten ersten Nachricht
+const waHref =
+  "https://wa.me/" + KONTAKT.telefonLink.replace(/\D/g, "") +
+  "?text=" + encodeURIComponent("Hallo CleanPro, ich hätte gerne ein Angebot für: ");
+document.querySelectorAll("[data-wa-link]").forEach((a) => (a.href = waHref));
 document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
 // Für Zuhause / Für Gewerbe
